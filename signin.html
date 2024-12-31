@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+header {
+    background-color: #75b6f3;
+    padding: 1rem 2rem;
+    
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #f4a261;
+    border-radius: 5px;
+}
+      
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 900px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .form-section h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .form-section p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .form-section label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .form-section input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-section .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .form-section .options a {
+            font-size: 14px;
+            color: #6c63ff;
+            text-decoration: none;
+        }
+
+        .form-section button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #6c63ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-section button:hover{
+            background: #534dc4;
+        }
+
+       
+
+       
+        .form-section .signup {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .form-section .signup a {
+            color: #6c63ff;
+            text-decoration: none;
+        }
+        .google-signin {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: #ffffff;
+      color: #273244;
+      border: 1px solid #d9d9d9;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .google-signin:hover {
+      background: #f0f0f0;
+    }
+
+        .illustration-section {
+            flex: 1;
+            background-color: #e0d8f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .illustration-section img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Smart Budget Management System</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="home2.html">Home</a></li>
+                    <li><a href="signin.html">Login</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="box">
+        <div class="container">
+            <div class="form-section">
+                <p>Smart Budget Management</p>
+                <h1>Welcome back</h1>
+                <p>Please enter your details</p>
+
+                <form action="index.html">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email"
+                        placeholder="Enter your email">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password"
+                        placeholder="Enter your password">
+
+                    <div class="options">
+
+                        <a href="forget.html">Forgot password</a>
+                    </div>
+
+                    <button type="submit">Sign in</button>
+
+                    <a href="newpage.html"><div class="google-signin">
+                        <img src="google-logo.png" alt="Google Logo" style="margin-right: 8px;">
+                        Sign in with Google
+                      </div></a>
+
+                    <div class="signup">
+                        <p>Don’t have an account? <a href="signup.html">Sign
+                                up</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="illustration-section">
+                <img src="login.jpg" alt="Illustration">
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

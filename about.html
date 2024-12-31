@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <style>
+        /* styles.css */
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color:#f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+header {
+    background-color: #75b6f3;
+    padding: 1rem 2rem;
+    
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #f4a261;
+    border-radius: 5px;
+}
+.hero {
+    
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero p {
+    font-size: 50px;
+    color: #241d4b;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    color: #4de83c;
+}
+
+.about .text {
+    flex: 1;
+    color: #241d4b;
+    font-size: 22px;
+}
+
+.about .images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about .images img {
+    width: 90%;
+    border-radius: 8px;
+
+}
+.about .text button {
+            background-color: #3394de;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            
+        }
+
+        .about .text button:hover {
+            background-color: #065cbe;
+        }
+
+    </style>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Smart Budget Management System</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="signin.html">Login</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="content">
+                <p>We help people worldwide<br><b> to manage their budget &<br>
+                        expenses.</p>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="text">
+                    <h2>Smart Budget Management Systen, is a web-based
+                        application
+                        designed to help people to track
+                        their income and expenses, categorize transactions, and
+                        visualize their financial status.</h2>
+                    <p>People often struggle to manage their limited financial
+                        resources effectively, which can lead to
+                        overspending or insufficient savings. This website
+                        addresses these issues by providing a simple
+                        and efficient tool for tracking finances.</p>
+                    <p>The Smart Budget Management System enables users to log
+                        their
+                        income and expenses, view categorized summaries, and
+                        gain insights into their financial habits
+                        through visualizations. This ensures students are
+                        informed about their spending patterns and can
+                        make better financial decisions.</p>
+                    <p> It features
+                        functionalities such as adding income/expenses with date
+                        and category, real-time balance
+                        updates, warnings when expenses exceed income, a reset
+                        feature, and a chart visualization.</p>
+
+                        <br>
+
+                        <a href="signin.html"><button>Click Here To Use</button></a>
+                </div>
+                <div class="images">
+                    <img src="budget-management.jpg" alt="Team Meeting">
+
+                </div>
+            </section>
+
+        </body>
+    </html>

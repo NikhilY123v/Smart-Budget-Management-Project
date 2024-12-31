@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Budget Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="logo">
+            <h1>Smart Budget Management System</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="signin.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+  <div class="container">
+    <h1>Budget Manager</h1>
+    <form id="budget-form">
+      <label for="type">Type:</label>
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="category">Category:</label>
+      <input type="text" id="category" placeholder="e.g., Rent, Food" required>
+
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount" required>
+
+      <button type="submit">Add</button>
+    </form>
+
+    <button id="reset-btn" class="reset-btn">Reset Data</button>
+
+    <h2>Summary</h2>
+    <div id="summary">
+      <p>Total Income: Rs <span id="total-income">0</span></p>
+      <p>Total Expense: Rs <span id="total-expense">0</span></p>
+      <p>Balance: Rs <span id="balance">0</span></p>
+    </div>
+
+    <h2>Transaction History</h2>
+    <ul id="transaction-list"></ul>
+
+    <h2>Visualization</h2>
+    <canvas id="budget-chart" width="400" height="200"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
